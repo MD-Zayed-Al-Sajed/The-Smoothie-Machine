@@ -1,0 +1,148 @@
+/* Global styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form container styling */
+form {
+    max-width: 450px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Input fields */
+input, select, button {
+    width: calc(100% - 20px);
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focused input field */
+input:focus, select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+/* Specific styling for the name input field (optional) */
+#customerName {
+    font-weight: normal;
+}
+
+/* Dropdown styling */
+select {
+    cursor: pointer;
+}
+
+/* Submit button */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit button hover and active states */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Fruit container styling */
+.fruit-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Fruit button styling */
+.fruit-button {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6); /* Text color for fruit names */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Subtle text shadow */
+}
+
+/* Selected fruit button */
+.fruit-button.selected {
+    border: 5px solid #28ab48; /* Thicker green border */
+    transform: scale(1.1); /* Slightly larger on selection */
+    color: white;
+    background-color: #28a745; /* Background for selected */
+}
+
+/* Fruit button hover effect */
+.fruit-button:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.05);
+}
+/* Styling for the fruit labels */
+.fruit-label {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Smoothie summary section */
+#summary {
+    margin: 20px auto;
+    max-width: 450px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Smoothie summary paragraphs */
+#summary p {
+    margin: 5px 0;
+}

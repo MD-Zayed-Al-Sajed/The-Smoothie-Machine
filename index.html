@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Order Your Smoothie</h1>
+<form id="smoothieForm">
+    <label for="customerName">Name:</label>
+    <input type="text" id="customerName" placeholder="Enter your name" required>
+
+    <label for="smoothieBase">Choose your base:</label>
+    <select id="smoothieBase" required>
+        <option value="" disabled selected>Select a base</option>
+        <option value="Milk">Milk</option>
+        <option value="Almond Milk">Almond Milk</option>
+        <option value="Soy Milk">Soy Milk</option>
+        <option value="Oat Milk">Oat Milk</option>
+    </select>
+
+    <label>Choose fruits:</label>
+    <div class="fruit-container">
+        <!-- Banana -->
+        <div class="fruit-item">
+            <button type="button" class="fruit-button" data-fruit="Banana" style="background-image: url('Images/Banana.png');"></button>
+            <span class="fruit-label">Banana</span>
+        </div>
+        <!-- Strawberry -->
+        <div class="fruit-item">
+            <button type="button" class="fruit-button" data-fruit="Strawberry" style="background-image: url('Images/Strawberries.png');"></button>
+            <span class="fruit-label">Strawberry</span>
+        </div>
+        <!-- Blueberry -->
+        <div class="fruit-item">
+            <button type="button" class="fruit-button" data-fruit="Blueberry" style="background-image: url('Images/Blueberries.png');"></button>
+            <span class="fruit-label">Blueberry</span>
+        </div>
+        <!-- Mango -->
+        <div class="fruit-item">
+            <button type="button" class="fruit-button" data-fruit="Mango" style="background-image: url('Images/Mangos.png');"></button>
+            <span class="fruit-label">Mango</span>
+        </div>
+    </div>
+
+    <label for="toppings">Choose toppings:</label>
+    <select id="toppings" multiple>
+        <option value="None">None</option>
+        <option value="Whipped Cream">Whipped Cream</option>
+        <option value="Chia Seeds">Chia Seeds</option>
+        <option value="Chocolate Chips">Chocolate Chips</option>
+    </select>
+
+    <button type="submit">Order</button>
+</form>
+
+<h2>Your Smoothie Summary</h2>
+<div id="summary"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
